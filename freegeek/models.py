@@ -15,8 +15,8 @@ phoneValidator = RegexValidator(
     regex=r'[0-9][0-9 ]+',
     message='Not a valid phone number')
 
-
-from models_old import *
+# models_old is throwing an error "ModuleNotFoundError: No module named 'models_old"
+# from models_old import *
 
 
 class StaffManager(UserManager):
